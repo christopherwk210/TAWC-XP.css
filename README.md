@@ -1,3 +1,5 @@
+This is my personal fork used to create the XP theme for [Topher's Archipelago Web Client](https://github.com/christopherwk210/tophers-archipelago-web-client).
+
 ## XP.css
 
 [![npm](https://img.shields.io/npm/v/xp.css)](http://npm.im/xp.css)

@@ -8,7 +8,36 @@
 }
 
 menu[role="tablist"] {
-    button {
+    li {
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+        border: 1px solid #003c74;
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(236, 235, 229, 1) 86%,
+            rgba(216, 208, 196, 1) 100%
+        );
+        box-shadow: none;
+        border-radius: 3px;
+        &:not(:disabled) {
+            &:active,
+            &.active {
+                box-shadow: none;
+                background: linear-gradient(
+                    180deg,
+                    rgba(205, 202, 195, 1) 0%,
+                    rgba(227, 227, 219, 1) 8%,
+                    rgba(229, 229, 222, 1) 94%,
+                    rgba(242, 242, 241, 1) 100%
+                );
+            }
+        }
+        &::-moz-focus-inner {
+            border: 0;
+        }
+
+        
         background: linear-gradient(
             180deg,
             rgba(255, 255, 255, 1) 0%,
@@ -22,7 +51,6 @@ menu[role="tablist"] {
         border-color: #91a7b4;
         border-top-right-radius: 3px;
         border-top-left-radius: 3px;
-        padding: 0 12px 3px;
         &:hover {
             box-shadow: unset;
             border-top: 1px solid #e68b2c;

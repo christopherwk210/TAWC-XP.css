@@ -16,3 +16,84 @@
  @import "_treeview.scss";
  @import "_progressbar.scss";
  
+
+input, label, textarea {
+  font-size: initial !important;
+}
+
+button {
+  font-size: initial !important;
+}
+
+.window {
+  font-size: initial !important;
+}
+
+input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], select {
+  box-shadow: none;
+}
+
+.title-bar {
+  font-size: initial !important;
+  height: initial !important;
+}
+
+select, option {
+  font-size: initial !important;
+}
+
+.login {
+  position: relative;
+  background: linear-gradient(to top left, #6c8fe2, #4e6fd6, #7295e5) !important;
+}
+
+.login > h1 {
+  display: none;
+}
+
+.login:before {
+  content: "Topher's Archipelago Web Client";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: #003399;
+  border-bottom: 2px solid #976e5c;
+  align-items: center;
+  padding-left: 20px;
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  text-shadow: 1px 1px 2px #000000;
+  font-family: Tahoma;
+}
+
+.login:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: #003399;
+  border-top: 2px solid #976e5c;
+}
+
+@media (max-width: 604px) {
+  .login:before {
+    font-size: 1.5rem;
+  }
+}
+
+.connected {
+  background: linear-gradient(5deg, #2b351f 0%, #95c324 30%, #a0c4f4 30%, #407cf0 100%) !important;
+}
+
+[role=tabpanel] {
+  border-radius: 0 !important;
+}
+
+table>thead>tr>* {
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -1px -1px grey, inset 1px 1px #dfdfdf !important;
+}
